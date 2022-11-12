@@ -1,0 +1,26 @@
+
+<head>
+    <title>Bazad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<h2>База данных</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Задача</th>
+        <th>Время</th>
+    </tr>
+
+    <tr th:each="bazz : ${bazad}">
+        <td th:text="${bazz.id}">Id</td>
+        <td th:text="${bazz.name}">Name</td>
+        <td th:text="${bazz.timers}">Timers</td>
+    </tr>
+</table>
+
+</body>
+</html>
